@@ -6,3 +6,9 @@ def reverse_each_word(string)
   new_sentence.join(" ")
 end
 
+def reverse_each_word(string)
+  string.split.collect do |reverse_words|
+  reverse_words.reverse
+  end
+    .join(" ")
+end
